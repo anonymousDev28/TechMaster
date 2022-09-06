@@ -566,18 +566,25 @@ img{
    position: relative;
 }
 .experience-item-img{
+    
+    object-fit: cover;
     overflow: hidden;
     position: relative;
-    /* width: 100%; */
-    /* height: 50%; */
-    /* padding-bottom: 20px; */
-    height: 195px;
+    width: 100%;
+
+}
+.experience-item-img::before{
+    content: "";
+    display: block;
+    padding-top: 66.66%;
 }
 .experience-item-img img{
-    /* max-height: 456px; */
-    object-fit: center;  
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
     width: 100%;
-    
 }
 .experience-item-text{
     padding: 1.25rem;
@@ -587,6 +594,11 @@ img{
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
+}
+.experience-item-des p{
+    color: #464646;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 

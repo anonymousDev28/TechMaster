@@ -550,6 +550,7 @@ img{
 .list-item{
     display: flex;
     flex: 0 0 25%;
+    /* flex-wrap: wrap; */
 }
 .experience-item{
     /* width: 100%; */
@@ -600,7 +601,26 @@ img{
     font-size: 16px;
     line-height: 24px;
 }
-
-
+.list-item .see-more{
+    align-items: center;
+    text-align: center;
+}
+.see-more{
+    display: block;
+    /* margin-top: 48px; */
+    background-color: #30598c;
+    border:2px solid #30598c;
+    border-radius: 6px;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s all;
+    margin:20px auto ;
+}
+.see-more:hover{
+    background-color: #fff;
+    color: #30598c;
+}
 
 
